@@ -14,7 +14,13 @@
     "lib": [
       "es2018",
       "dom"
-    ]
+    ],
+    "paths": {
+      "hana-datetimepicker": [
+        "dist/hana-datetimepicker/hana-datetimepicker",
+        "dist/hana-datetimepicker"
+      ]
+    }
   },
   "angularCompilerOptions": {
     "fullTemplateTypeCheck": true,

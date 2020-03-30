@@ -123,6 +123,50 @@
           }
         }
       }
-    }},
-  "defaultProject": "hanamilabs-datetimepicker"
+    },
+    "hana-datetimepicker": {
+      "projectType": "library",
+      "root": "projects/hana-datetimepicker",
+      "sourceRoot": "projects/hana-datetimepicker/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "projects/hana-datetimepicker/tsconfig.lib.json",
+            "project": "projects/hana-datetimepicker/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/hana-datetimepicker/tsconfig.lib.prod.json"
+            }
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/hana-datetimepicker/src/test.ts",
+            "tsConfig": "projects/hana-datetimepicker/tsconfig.spec.json",
+            "karmaConfig": "projects/hana-datetimepicker/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/hana-datetimepicker/tsconfig.lib.json",
+              "projects/hana-datetimepicker/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
+    }
+  },
+  "defaultProject": "hanamilabs-datetimepicker",
+  "cli": {
+    "analytics": "cb6abe0e-88a1-4f59-931b-7424442f654b"
+  }
 }

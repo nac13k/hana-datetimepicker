@@ -1,10 +1,25 @@
-import { Component } from '@angular/core';
+import { Component, OnInit, AfterViewInit } from '@angular/core';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })
-export class AppComponent {
-  title = 'hanamilabs-datetimepicker';
+export class AppComponent implements OnInit, AfterViewInit {
+  date: Date = new Date();
+  settings = {
+    bigBanner: true,
+    timePicker: true,
+    format: 'dd-MM-yyyy',
+    defaultOpen: true
+  }
+  constructor() {
+
+  }
+  ngAfterViewInit() {
+
+  }
+  ngOnInit() {
+
+  }
 }
