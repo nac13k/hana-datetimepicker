@@ -1,6 +1,15 @@
 {
   "name": "hanamilabs-datetimepicker",
-  "version": "0.0.0",
+  "description": "A fork of Angular2DatetimePicker https://cuppalabs.github.io/components/datepicker/ for Angular 7, 8 and 9",
+  "repository": {
+    "url": "https://github.com/nac13k/hana-datetimepicker"
+  },
+  "author": {
+    "email": "nac13k@gmail.com",
+    "name": "Lumbreras"
+  },
+  "version": "0.0.2",
+  "license": "MIT",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
@@ -9,7 +18,7 @@
     "lint": "ng lint",
     "e2e": "ng e2e"
   },
-  "private": true,
+  "private": false,
   "dependencies": {
     "13": "0.0.0",
     "@angular/animations": "~9.1.0",

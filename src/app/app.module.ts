@@ -1,4 +1,3 @@
-import { HanaDatetimepickerModule } from './../../projects/hana-datetimepicker/src/lib/hana-datetimepicker.module';
 import { FormsModule } from '@angular/forms';
 import { DatePickerExample } from './examples/datepicker';
 import { BrowserModule } from '@angular/platform-browser';
@@ -10,6 +9,7 @@ import { DateTimePickerExample } from './examples/datetimepicker';
 import { SimpleDatePickerExample } from './examples/simpledatepicker';
 import { UsingWithFormExample } from './examples/usingWithForms';
 import { DateRangePickerExample } from './examples/rangepicker';
+import { HanaDatetimepickerModule } from 'hana-datetimepicker';
 
 @NgModule({
   declarations: [

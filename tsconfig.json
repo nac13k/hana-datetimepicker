@@ -17,7 +17,6 @@
     ],
     "paths": {
       "hana-datetimepicker": [
-        "dist/hana-datetimepicker/hana-datetimepicker",
         "dist/hana-datetimepicker"
       ]
     }
